@@ -55,3 +55,11 @@ Functions will be explained in the order they appear in in the code. When the fi
     - for the total score, the total record accuracy scores are treated like a parameter --> record total scores are calculated using only the relevant parameters
     - $AS_{total}(f,l) = \frac{\sum_{t \in T^{\ast}}^{}AS_{record}(f,l,t)}{\sum_{t \in T^{\ast}}^{}1}$
     - $AS_{parameter}(f,l,p) = \frac{\sum_{t \in T^{\ast}}^{}AS'(f,l,t,p)}{\sum_{t \in T^{\ast}}^{}1}$ 
+    
+### Safety Risk Detection Score [safetyRiskDetectionScore.py](https://github.com/julia-albert-3107/Masters_thesis/blob/main/Weather%20Prediction%20Scoring%20Algorithm/safetyRiskRetectionScore.py)
+> **Note:**
+> Work in progress
+
+### False Positive Score [falsePositiveScore.py](https://github.com/julia-albert-3107/Masters_thesis/blob/main/Weather%20Prediction%20Scoring%20Algorithm/falsePositiveScore.py)
+> **Note:**
+> Work in progress
