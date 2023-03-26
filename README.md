@@ -3,14 +3,31 @@ This repository will contain the code and the data collected in the scope of my 
 
 ## General Remarks
 Apache NiFi does not create the required database tables.
-> **Note:**
-> PostgreSQL scripts to create the required tables will be uploaded soon.
+The description of the data import process as well as all the data has been uploaded to the sciebo folder for this master's thesis. 
 
 To run the code for the Weather Prediction Scoring Algorithm a PostgreSQL database needs to be running. This database has to contain the required database tables that include the data that has been imported by the integration system. The connection to the database is configured in the Python files and has to be adjusted.
 
-## NiFi - Intergration process
-> **Note:**
-> Work in progress
+## NiFi - Integration process
+### Option 1: Importing the process groups
+1. Download the four json files from the [NiFi Code folder](https://github.com/julia-albert-3107/Masters_thesis/tree/main/NiFi%20Code)
+2. Start Apache NiFi
+3. Drag the "Process Group" symbol in the top left into middle of the screen
+4. Click on the "Browse" botton
+5. Select one of the four files to import
+6. Click "Add"
+7. Repeat step 3 - 6 to add the other process groups
+
+### Option 2: Import all data flows as NiFi templates
+1. Download the xml files from the [NiFi Code folder](https://github.com/julia-albert-3107/Masters_thesis/tree/main/NiFi%20Code)
+2. Start Apache NiFi
+3. (Optional) Create a new process group by dragging the "Process Group" symbol in the top left into middle of the screen
+4. (Optional) Name the process group and click "Add"
+5. (Optional) Open the new, empty process group
+6. Click on the "Upload template" symbol on the left
+7. Click the "Browse" symbol
+8. Select one of the xml files
+9. Click "Upload"
+10. Repeat step 3 or 6 - 9 to import the other data flows
 
 ## Weather Prediction Scoring Algorithm - Scoring of the data
 The Weather Prediction Scoring Algorithm (WPSA) consists of three main files that calculate the three different scores. When the code is run, those files should be run in the following order: accuracyScore.py --> safetyRiskDetectionScore.py --> falsePositiveScore.py \
