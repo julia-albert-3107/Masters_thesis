@@ -61,7 +61,7 @@ Functions will be explained in the order they appear in in the code. When the fi
     - $AS_{total}(f,l) = \frac{\sum_{t \in T^{\ast}}^{}AS_{record}(f,l,t)}{\sum_{t \in T^{\ast}}^{}1}$
     - $AS_{parameter}(f,l,p) = \frac{\sum_{t \in T^{\ast}}^{}AS'(f,l,t,p)}{\sum_{t \in T^{\ast}}^{}1}$ 
     
-### Safety Risk Detection Score [safetyRiskDetectionScore.py](https://github.com/julia-albert-3107/Masters_thesis/blob/main/Weather%20Prediction%20Scoring%20Algorithm/safetyRiskRetectionScore.py)
+### Safety Risk Detection Score ([safetyRiskDetectionScore.py](https://github.com/julia-albert-3107/Masters_thesis/blob/main/Weather%20Prediction%20Scoring%20Algorithm/safetyRiskRetectionScore.py))
 - the general and site-specific weather limits are included on top of the file --> those limits are used to detect safety risks depending on the location and technology
 - **recordParameterSafetyRiskDetectionScoreOnshore(forecastProvider, forecasts, observations):** function to calculate the Safety Risk Detection Score for all parameters in an onshore record according to equation (7.6) in my thesis
     - $\text{if } \ observation(f,t,l,p) = \text{safety risk, } \forall p \in P^{\ast}: \\
@@ -86,7 +86,7 @@ Functions will be explained in the order they appear in in the code. When the fi
     - $SRDS_{total}(f,l) = \frac{\sum_{p \in P^{\ast}}^{}\left(\sum_{t \in T^{\ast}}^{}SRDS(f,l,t,p)\right)}{\sum_{r \in OR(l)}^{}1}$
     - list of relevant parameters as input --> different parameters are relevant for different locations
 
-### False Positive Score [falsePositiveScore.py](https://github.com/julia-albert-3107/Masters_thesis/blob/main/Weather%20Prediction%20Scoring%20Algorithm/falsePositiveScore.py)
+### False Positive Score ([falsePositiveScore.py](https://github.com/julia-albert-3107/Masters_thesis/blob/main/Weather%20Prediction%20Scoring%20Algorithm/falsePositiveScore.py))
 - the general and site-specific weather limits are included on top of the file --> those limits are used to detect safety risks depending on the location and technology
 - **recordFalsePositiveScoreOnshore(forecastProvider, forecasts, observations):** function to calculate the False Positive Score for all parameters in an onshore record according to equation (7.9) in my thesis
     - $if \ forecast(f,t,l,p) = \text{safety risk, } \forall p \in P^{\ast}: \\ 
